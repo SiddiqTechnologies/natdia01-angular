@@ -15,20 +15,18 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { MytestComponent } from './views/mytest/mytest.component';
 import { ModalService } from './services/modal.service';
 
 import { environment } from '../environments/environment';
-import { LogoutComponent } from './shared/logout/logout.component';
 import { MessageDialogComponent } from './services/message-dialog/message-dialog.component';
+import { AddhoursComponent } from './views/addhours/addhours.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        MytestComponent,
         MessageDialogComponent,
-        LogoutComponent
+        AddhoursComponent
     ],
     imports: [
         BrowserAnimationsModule,
