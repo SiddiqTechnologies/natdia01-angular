@@ -47,7 +47,7 @@ import { InputDialogComponent } from './services/input-dialog/input-dialog.compo
     ],
     providers: [ModalService],
   entryComponents: [
-    MessageDialogComponent
+    MessageDialogComponent, ConfirmDialogComponent, InputDialogComponent
   ],
     bootstrap: [AppComponent]
 })
