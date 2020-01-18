@@ -1,6 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
@@ -35,7 +35,7 @@ import { InputDialogComponent } from './services/input-dialog/input-dialog.compo
     imports: [
         BrowserAnimationsModule,
         NgbModule.forRoot(),
-        FormsModule,
+        FormsModule, ReactiveFormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
