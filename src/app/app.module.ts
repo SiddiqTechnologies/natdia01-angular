@@ -20,12 +20,16 @@ import { ModalService } from './services/modal.service';
 import { environment } from '../environments/environment';
 import { MessageDialogComponent } from './services/message-dialog/message-dialog.component';
 import { AddhoursComponent } from './views/addhours/addhours.component';
+import { ConfirmDialogComponent } from './services/confirm-dialog/confirm-dialog.component';
+import { InputDialogComponent } from './services/input-dialog/input-dialog.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
         MessageDialogComponent,
+        ConfirmDialogComponent,
+        InputDialogComponent,
         AddhoursComponent
     ],
     imports: [
