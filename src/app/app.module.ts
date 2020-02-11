@@ -22,6 +22,9 @@ import { MessageDialogComponent } from './services/message-dialog/message-dialog
 import { AddhoursComponent } from './views/addhours/addhours.component';
 import { ConfirmDialogComponent } from './services/confirm-dialog/confirm-dialog.component';
 import { InputDialogComponent } from './services/input-dialog/input-dialog.component';
+import { TutorialComponent } from './views/tutorial/tutorial.component';
+import { ReportsComponent } from './views/reports/reports.component';
+import { SettingsComponent } from './views/settings/settings.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +33,10 @@ import { InputDialogComponent } from './services/input-dialog/input-dialog.compo
         MessageDialogComponent,
         ConfirmDialogComponent,
         InputDialogComponent,
-        AddhoursComponent
+        AddhoursComponent,
+        TutorialComponent,
+        ReportsComponent,
+        SettingsComponent
     ],
     imports: [
         BrowserAnimationsModule,

@@ -11,7 +11,7 @@ export class AuthGuard implements CanActivate {
   confirmedResult: boolean;
   inputResult: string;
   messageResult: boolean;
-  customResult: string;  
+  customResult: string;
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -33,9 +33,9 @@ export class AuthGuard implements CanActivate {
       ).pipe(
         take(1) // take() manages unsubscription for us
       ).subscribe(result => {
-          console.log({ messageResult: result });
-          this.messageResult = result;
-          this.router.navigate(['examples/login']).catch(err => console.log(err));
+        this.messageResult = result;
+          console.log(this.messageResult);
+          this.router.navigate(['/login']).catch(err => console.log(err));
         });
       }
     return isLoggedIn;

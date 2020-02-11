@@ -60,8 +60,7 @@ export class NavbarComponent implements OnInit {
     }
     
     handleLogOutClick() {
-      console.log('logot clicked');
       this.afAuth.auth.signOut();
-      this.router.navigate(['examples/login']).catch(err => console.log(err));
+      this.router.navigate(['/login']).catch(err => console.log(err));
     }
 }
