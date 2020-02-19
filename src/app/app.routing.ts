@@ -26,7 +26,7 @@ const routes: Routes =[
     { path: 'reports', component: ReportsComponent, canActivate: [AuthGuard] },
     { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard] },
     { path: 'tutorial', component: TutorialComponent }
-  // { path: 'examples/landing',     component: LandingComponent, canActivate: [AuthGuard] },
+  // { path: examples/landing',     component: LandingComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
