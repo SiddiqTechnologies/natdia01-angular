@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Rellax from 'rellax';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-addhours',
@@ -15,9 +16,10 @@ export class AddhoursComponent implements OnInit {
   focus;
   focus1;
 
-  constructor() { }
+  constructor(private allData: DataService) { }
 
   ngOnInit() {
+    console.log(this.allData.AllServices);
     var rellaxHeader = new Rellax('.rellax-header');
 
     var body = document.getElementsByTagName('body')[0];

@@ -8,6 +8,7 @@ import { ModalService } from '../../services/modal.service';
 import { take } from 'rxjs/operators';
 
 import * as firebase from 'firebase';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-login',
