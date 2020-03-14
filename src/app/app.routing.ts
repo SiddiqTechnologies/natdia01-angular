@@ -25,7 +25,7 @@ const routes: Routes =[
     { path: 'hours', component: AddhoursComponent, canActivate: [AuthGuard] },
     { path: 'reports', component: ReportsComponent, canActivate: [AuthGuard] },
     { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard] },
-    { path: 'tutorial', component: TutorialComponent }
+    { path: 'tutorial', component: TutorialComponent, canActivate: [TutorialguardGuard] }
   // { path: examples/landing',     component: LandingComponent, canActivate: [AuthGuard] },
 ];
 
